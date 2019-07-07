@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/bmi','BmiController@index');
+Route::post('/bmi','BmiController@calc');
+
+Route::get('/seiza','SeizaController@index');
+Route::post('/seiza','SeizaController@calc');
+
+Route::get('/post','PostController@index');
+
+Route::get('/book','BookController@index');
