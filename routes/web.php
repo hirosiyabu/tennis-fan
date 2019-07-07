@@ -23,3 +23,6 @@ Route::post('/seiza','SeizaController@calc');
 Route::get('/post','PostController@index');
 
 Route::get('/book','BookController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
