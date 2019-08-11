@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/post');
 });
 Route::get('/bmi','BmiController@index');
 Route::post('/bmi','BmiController@calc');
@@ -20,9 +20,25 @@ Route::post('/bmi','BmiController@calc');
 Route::get('/seiza','SeizaController@index');
 Route::post('/seiza','SeizaController@calc');
 
-Route::get('/post','PostController@index');
+// 掲示板機能
 
+Route::get('/post','PostController@index');
+Route::post('post/create','PostController@create');
+Route::post('post/update','PostController@update');
+Route::post('post/delete','PostController@delete');
+Route::get('post/edit/{id}','PostController@edit');
+Route::get('post/{id}','PostController@detail');
+
+
+Route::post('comment/create','CommentController@create');
+
+
+// おすすめ本機能
 Route::get('/book','BookController@index');
+
+// ログイン機能
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+

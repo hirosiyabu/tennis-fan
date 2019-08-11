@@ -7,24 +7,36 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+    <script src="{{ asset('js/animocons.min.js') }}" defer></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="{{ asset('css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ asset('css/landing-page.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/animocons.min.css') }}" />
+      <!-- Bootstrap core JavaScript -->
+    <script src="{{ asset('startbootstrap-landing-page-gh-pages/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ asset('startbootstrap-landing-page-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand" href="{{ url('/post') }}">
+                    {{ config('app.name') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -45,7 +57,7 @@
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
                                 </li>
                             @endif
                         @else
@@ -72,7 +84,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>
