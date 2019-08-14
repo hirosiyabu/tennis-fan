@@ -10,7 +10,7 @@ class Comment extends Model
     public function post(){
     return $this->belongsTo('App\Post');
     }
-
+    protected $table = 'comments';
     protected $fillable = [
         'commenter', 'comment', 'post_id'
     ];

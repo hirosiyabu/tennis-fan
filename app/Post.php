@@ -17,7 +17,7 @@ class Post extends Model
       return $this->belongsTo('App\User');
     }
   
-
+    protected $table = 'posts';
     protected $fillable = [
         'title', 'content', 'user_id'
     ];
