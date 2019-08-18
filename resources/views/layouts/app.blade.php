@@ -138,6 +138,33 @@
                 </div>
             </div>
         </nav>
+        <!-- loading -->
+        <link href="{{ asset('/css/loading.css') }}" rel="stylesheet">
+        <div class="loader">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="loader loader--reflect">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <!-- Footer -->
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
             <div class="container">
