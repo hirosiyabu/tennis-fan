@@ -1,57 +1,90 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="card bg-dark text-dark text-center">
+<div id="top" class="card bg-dark text-dark text-center">
   <img class="card-img" src="{{asset('img/tennis3.jpg')}}" width="744" height="450" alt="Card image">
-  <div class="card-img-overlay">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto mb-20">
-          <h1 class="mb-5 display-4">Welcome to the Tennis Fan Site!</h1>
+    <div class="card-img-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto mb-20">
+            <h1 class="mb-5 display-4">Welcome to the Tennis Fan Site!</h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </div>
   
 
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
-            </div>
-            <h3>Fully Responsive</h3>
-            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+  
+<section class="mb-5 bg-light text-center">
+  <div class="container">
+    <div class="row">
+      <div class="my-5 col-lg-4">
+        <div class="mt-5 mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="circle-button">
+            <button class="icobutton icobutton-4-2196f3-blue">
+              <span class="fa fa-comments fa-5x"></span>
+            </button>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-primary"></i>
-            </div>
-            <h3>Bootstrap 4 Ready</h3>
-            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+          <div class="card-bottom text-center">
+            <a  id="i掲示板" href="#掲示板">
+              <h2 class="card-title">掲示板</h2>
+            </a>
+              <p class="mb-5 card-desc">テニスについての掲示板です。<br/>大会情報や選手情 ets.. テニスのことに関することならなんでも書き込みOKです！現地リポートや実況掲示板としても使えます！</p>
+          </div>
+      </div>
+      <div class="my-5 col-lg-4">
+        <div class="mt-5 mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="circle-button">
+            <button id="btn2" class="icobutton icobutton-4-2196f3-blue">
+              <span class="fa fa-book fa-5x"></span>
+            </button>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
-            </div>
-            <h3>Easy to Use</h3>
-            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+        <div class="card-bottom text-center">
+          <a id="ibook" href="#book">
+            <h2 class="card-title">お勧め本</h2>
+          </a>
+            <p class="mb-5 card-desc">お勧めの本です<br/>お気に入りの選手の本を探すのも楽しいですよ！コーチの本もお勧めです！</p>
+        </div>
+      </div>
+      <div class="my-5 col-lg-4">
+        <div class="mt-5 mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="circle-button">
+            <button id="btn3" class="icobutton icobutton-4-2196f3-blue">
+              <span class="fa fa-youtube fa-5x"></span>
+            </button>
           </div>
+        </div>
+        <div class="card-bottom text-center">
+          <a id="iお勧めテニス動画" href="#お勧めテニス動画">
+            <h2 class="card-title">Youtubeリンク</h2>
+          </a>
+            <p class="mb-5 card-desc">動画を集めてみました。<br/>錦織選手、大阪選手はじめ、過去の動画も集めてみました、一度ご覧になってください(^ ^)</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<section class="mb-5 bg-light text-center">
   <div class="container">
-
-<p class="text-center">掲示板</p>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="fb-page" data-href="https://www.facebook.com/tennis365/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/tennis365/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tennis365/">テニス365 / tennis365.net</a></blockquote></div>
+      </div>
+      <div class="col-lg-4">
+        <a class="twitter-timeline" data-lang="ja" data-width="340" data-height="500" href="https://twitter.com/keinishikori?ref_src=twsrc%5Etfw">Tweets by keinishikori</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="col-lg-4">
+        <a class="twitter-timeline" data-lang="ja" data-width="340" data-height="500" href="https://twitter.com/Naomi_Osaka_?ref_src=twsrc%5Etfw">Tweets by Naomi_Osaka_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="掲示板" class="container">
+<h1 class="text-center">掲示板</h1>
 @include('search')
 <div class="col-xs-8 col-xs-offset-2">
 
@@ -59,6 +92,7 @@
   <div class="card">
       <div class="card-header">
       <h4 class="font-weight-bold">タイトル：{{ $post->title }}</h4>
+      <p><img src="img/backimg.jpg" alt=titleimg  width="100%" height="45"></p>
       </div>
       <div class="card-title">
           <p class="card-text">{{ $post->content }}</p>
@@ -98,6 +132,7 @@
     </div>
     <button class="btn btn-primary btn-block" type="submit">スレッドを立てる</button>
 </form>
+<h1 id="book" class="text-center">お勧め本</h1>
 <section class="bg-light text-center">
     <div class="container">
       <div class="row">
@@ -194,7 +229,7 @@
       </div>
     </div>
 </section>
-
+<h1 id="お勧めテニス動画">お勧めテニス動画</h1>
 <section class="bg-light">
     <div class="container">
       <div class="row">
@@ -302,51 +337,32 @@
 
   
   <!-- Footer -->
-  <footer class="footer bg-primary">
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+            <a id="itop" href="#top" class="navbar-brand">topへ</a>
+            <p class="navbar-nav">© Mytennis-fansite 2019. All Rights Reserved.</p>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cotact</a>
+                    </li>
+                    <li class="nav-item">
+                    <div class="fb-share-button" data-href="https://tennis-fan.herokuapp.com/post" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftennis-fan.herokuapp.com%2Fpost&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
+                    </li>  
+                    <li class="nav-item">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://tennis-fan.herokuapp.com/post" data-via="tennis-fan" data-hashtags="tennis好きにお勧め！" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>   
+  </nav>
 
 @endsection

@@ -8,7 +8,63 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-
+    <!-- 一文字アニメーション -->
+    <SCRIPT language="JavaScript">
+    <!--
+    x=0;var text="テニスファンサイトにようこそ!!\nスレッドタイトルを検索したり\n掲示板に書き込んでください\nお勧め本や試合動画も集めてみました\nテニスファンのかた是非情報交換しましょう\n相互リンク大歓迎です！！\n試合現地リポートなどしてくれると嬉しいです！楽しんでいってくださいね＾＾";
+    function y() {x=x+1;document.a.b.value = text.substring(0,x)+"_";
+    if( x >= text.length ){document.a.b.value = text;}
+    if( x < text.length ){setTimeout("y()", 100);}}
+    //-->
+    </SCRIPT>
+    <!-- facebookシェア用コード -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
+    <!-- ボタンスクロール  -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+    $('#itop').on('click', function(){
+        var targetTop = $('#top').offset().top;
+        $('html,body').animate({
+            scrollTop: targetTop
+        }, 500);
+        return false;
+    });
+    });
+    </script>
+    <script>
+    $(function(){
+    $('#i掲示板').on('click', function(){
+        var targetTop = $('#掲示板').offset().top;
+        $('html,body').animate({
+            scrollTop: targetTop
+        }, 500);
+        return false;
+    });
+    });
+    </script>
+    <script>
+    $(function(){
+    $('#ibook').on('click', function(){
+        var targetTop = $('#book').offset().top;
+        $('html,body').animate({
+            scrollTop: targetTop
+        }, 500);
+        return false;
+    });
+    });
+    </script>
+    <script>
+    $(function(){
+    $('#iお勧めテニス動画').on('click', function(){
+        var targetTop = $('#お勧めテニス動画').offset().top;
+        $('html,body').animate({
+            scrollTop: targetTop
+        }, 500);
+        return false;
+    });
+    });
+    </script>
     <!-- Scripts -->
     <script src="{{ asset('js/jquery.min.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
@@ -27,11 +83,9 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/landing-page.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animocons.min.css') }}" />
-      <!-- Bootstrap core JavaScript -->
-    <script src="{{ asset('startbootstrap-landing-page-gh-pages/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{ asset('startbootstrap-landing-page-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 </head>
-<body>
+<body onLoad="y()">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
