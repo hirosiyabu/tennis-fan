@@ -17,7 +17,7 @@ class SocialLiteController extends Controller
         return Socialite::driver('facebook')->redirect();
     }
 
-    public function callback()
+    public function callback($social)
     {
         $user = Socialite::driver('facebook')->user();
         dd($user);
