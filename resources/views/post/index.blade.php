@@ -333,36 +333,4 @@
     </div>
 </section>
 
-
-
-  
-  <!-- Footer -->
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
-    <div class="container">
-            <a id="itop" href="#top" class="navbar-brand">topへ</a>
-            <p class="navbar-nav">© Mytennis-fansite 2019. All Rights Reserved.</p>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Privacy Policy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cotact</a>
-                    </li>
-                    <li class="nav-item">
-                    <div class="fb-share-button" data-href="https://tennis-fan.herokuapp.com/post" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftennis-fan.herokuapp.com%2Fpost&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>
-                    </li>  
-                    <li class="nav-item">
-                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://tennis-fan.herokuapp.com/post" data-via="tennis-fan" data-hashtags="tennis好きにお勧め！" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </li>
-                    
-                    
-                </ul>
-            </div>
-        </div>   
-  </nav>
-
 @endsection
