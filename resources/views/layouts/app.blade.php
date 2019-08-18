@@ -20,7 +20,7 @@
     <!-- facebookシェア用コード -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
     <!-- ボタンスクロール  -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script>
     $(function(){
     $('#itop').on('click', function(){
