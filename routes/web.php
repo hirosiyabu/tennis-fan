@@ -30,8 +30,7 @@ Route::get('post/edit/{id}','PostController@edit');
 Route::get('post/{id}','PostController@detail');
 
 // SNSログイン実装
-Route::get('/auth/signin', 'Auth\SocialLiteController@signin');
-Route::get('/auth/login', 'Auth\SocialLiteController@login');
+Route::get('/auth/login/{social}', 'Auth\SocialLiteController@login');
 Route::get('/auth/callback/{social}', 'Auth\SocialLiteController@callback');
 
 

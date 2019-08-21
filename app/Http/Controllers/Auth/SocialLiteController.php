@@ -11,14 +11,9 @@ use Auth;
 
 class SocialLiteController extends Controller
 {
-    public function signin()
+    public function login($social)
     {
-        return view('auth/signin');
-    }
-
-    public function login()
-    {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::driver($social)->redirect();
     }
 
     public function callback($social)

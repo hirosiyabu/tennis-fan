@@ -108,7 +108,8 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                <a href="/auth/login">facebook login</a>
+                                <a href="/auth/login/facebook">facebook login</a>
+                                <a href="/auth/login/twitter">twitter login</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -139,32 +140,14 @@
             </div>
         </nav>
         <!-- loading -->
+        <script src="{{ asset('/js/loading.js') }}" defer></script>
         <link href="{{ asset('/css/loading.css') }}" rel="stylesheet">
-        <div class="loader">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+            <div id="loadingBg"></div>
+                <div id="loading">
+                    <div id="percent"><span id="percent-text"></span>％</div>
+                    <div id="gauge"></div>
+                </div>
 
-        <div class="loader loader--reflect">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
         <!-- Footer -->
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
             <div class="container">
