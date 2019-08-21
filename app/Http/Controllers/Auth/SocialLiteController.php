@@ -19,7 +19,7 @@ class SocialLiteController extends Controller
     public function callback($social)
     {
         //ソーシャルサービス（情報）を取得
-        $userSocial = Socialite::driver($social)->stateless()->user();
+        $userSocial = Socialite::driver($social)->user();
         //emailで登録を調べる
         $user = User::where(['email' => $userSocial->getId()])->first();
 
