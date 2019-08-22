@@ -18,7 +18,8 @@
     //-->
     </SCRIPT>
     <!-- snsログインアイコン用 -->
-    
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0&appId=678800269303037&autoLogAppEvents=1"></script>
     <!-- facebookシェア用コード -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
     <!-- ボタンスクロール  -->
@@ -110,7 +111,7 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                <a href="/auth/login/facebook">facebook login</a>
+                                <a href="/auth/login/facebook"><div class="fb-login-button" data-width="" data-size="small" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div></a>
                                 <a href="/auth/login/twitter">twitter login</a>
                             </li>
                             @if (Route::has('register'))
