@@ -111,7 +111,7 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                <a href="/auth/login/facebook"><div class="fb-login-button" data-width="" data-size="small" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div></a>
+                                <a class="fb-login-button" data-width="" data-size="small" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" href="/auth/login/facebook"></a>
                                 <a href="/auth/login/twitter">twitter login</a>
                             </li>
                             @if (Route::has('register'))
