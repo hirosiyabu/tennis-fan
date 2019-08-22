@@ -18,8 +18,7 @@
     //-->
     </SCRIPT>
     <!-- snsログインアイコン用 -->
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0&appId=678800269303037&autoLogAppEvents=1"></script>
+    
     <!-- facebookシェア用コード -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
     <!-- ボタンスクロール  -->
@@ -83,16 +82,18 @@
     <link href="{{ asset('css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template and icon -->
     <link href="{{ asset('css/landing-page.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/animocons.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="{{ asset('/css/bootstrap-social.css') }}" rel="stylesheet">
 </head>
 <body onLoad="y()">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/post') }}">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm pr-0">
+            <div class="container pr-0">
+                <a class="navbar-brand mr-4" href="{{ url('/post') }}">
                     {{ config('app.name') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -110,15 +111,19 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                <a class="fb-login-button" data-width="" data-size="small" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" href="/auth/login/facebook"></a>
-                                <a href="/auth/login/twitter">twitter login</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('新規登録') }}</a>
                                 </li>
                             @endif
+                            <li class="nav-item">    
+                                <a class="btn btn-facebook mb-1 mx-1" href="/auth/login/facebook"><span class="fab fa-facebook"></span>facebookでログイン</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-twitter mb-1 mx-1 pr-2" href="/auth/login/twitter"><span class="fab fa-twitter"></span>twitterでログイン</a>
+                            </li>
                         @else
                             <li class="nav-item">
                                     <p class="text-right">{{ Auth::user()->name }}</p>  
@@ -126,7 +131,7 @@
                                         <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
+                                            {{ __('ログアウト') }}
                                         </a>
                                     </p>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
