@@ -17,6 +17,8 @@
     if( x < text.length ){setTimeout("y()", 100);}}
     //-->
     </SCRIPT>
+    <!-- snsログインアイコン用 -->
+    
     <!-- facebookシェア用コード -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
     <!-- ボタンスクロール  -->
@@ -117,22 +119,18 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
+                            <li class="nav-item">
+                                    <p class="text-right">{{ Auth::user()->name }}</p>  
+                                    <p class="text-right">
+                                        <a href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                    </p>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                                </div>
                             </li>
                         @endguest
                     </ul>
@@ -140,13 +138,7 @@
             </div>
         </nav>
         <!-- loading -->
-        <script src="{{ asset('/js/loading.js') }}" defer></script>
-        <link href="{{ asset('/css/loading.css') }}" rel="stylesheet">
-            <div id="loadingBg"></div>
-                <div id="loading">
-                    <div id="percent"><span id="percent-text"></span>％</div>
-                    <div id="gauge"></div>
-                </div>
+        
 
         <!-- Footer -->
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info">
