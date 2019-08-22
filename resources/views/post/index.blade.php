@@ -213,7 +213,7 @@
               <div class="card">
                 <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4163908013/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4163908013&linkCode=as2&tag=yh72yh72-22&linkId=cd94aa65c4bca48c45b94febe1929435"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4163908013&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4163908013" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
                   <div class="card-body">  
-                      <h4 class="card-title">Date of DATE</h4>
+                      <h4 class="card-title">伊達公子の日</h4>
                       <p class="card-text">伊達さんのセカンドキャリアを綴った本です。伊達さんの高いプロ意識や、やりきる姿勢をお手本にしたいです。</p>
                   </div>
               </div>
@@ -236,7 +236,7 @@
             </div>
               <div class="card">
                 <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+                エース錦織選手のBESTショット集です！錦織選手の凄いショットが見れます。エアケイやフットワークを活かしたコートカバーリングが見ものです！
                 </div>
               </div>
           </div>        
@@ -250,7 +250,7 @@
             </div>
               <div class="card">
                 <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+                大坂選手の全米オープン初優勝の時の動画です。決勝ではセレナ選手の行動が物議を呼びましたが、大坂選手の誠実な対応が印象的でした。
                 </div>
               </div>
           </div>
@@ -270,7 +270,7 @@
             </div>
               <div class="card">
                 <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+                修造さん１９９５年ウィンブルドンベスト８をかけた試合です。『この一球は絶対に無二の一球なり！！』と気合いを入れます。熱い！！熱すぎます！必見です。
                 </div>
               </div>
           </div>        
@@ -284,7 +284,7 @@
             </div>
               <div class="card">
                 <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+                伊達さん自身が仰るベストマッチ。２００キロを超えるビーナス・ウィリアムスのサービスをバシバシ返す伊達さんのライジングショット本当に凄かったです。
                 </div>
               </div>
           </div>
@@ -304,7 +304,7 @@
             </div>
               <div class="card">
                 <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+                杉山愛さんはダブルスの活躍が際立っているのでそちらに注目が行きがちですが、シングルスでも凄かったです。レジェンドのヒンギスにウィンブルドンで勝った試合です。ナイスフットワーク！！
                 </div>
               </div>
           </div>        
@@ -318,7 +318,7 @@
             </div>
               <div class="card">
                 <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptate.
+                テニス選手史上最強の選手と言われるフェデラー選手の動画、こんなショットが打てるのかと驚かされます。テニスを普段あまり見ない方にもお勧めできる動画です！
                 </div>
               </div>
           </div>
