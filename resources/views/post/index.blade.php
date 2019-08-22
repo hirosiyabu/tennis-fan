@@ -169,7 +169,7 @@
                 <div class="card-body">
                 <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4800276284/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4800276284&linkCode=as2&tag=yh72yh72-22&linkId=e1d737c326840843ec6a3751d0b28a50"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4800276284&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4800276284" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
                       <h4 class="card-title">超一流のメンタル</h4>
-                      <p class="card-text">マイケル・チャンさんのテニスレッスン本！DVD付きです。基本を大事にするチャンコーチの指導を疑似体験できるかも。</p>
+                      <p class="card-text">マイケル・チャンさんのテニスレッスン本DVD付きです。基本を大事にするチャンコーチの指導を疑似体験できるかも。</p>
                   </div>
               </div>
             </div>
@@ -188,7 +188,7 @@
                 <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4569820786/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4569820786&linkCode=as2&tag=yh72yh72-22&linkId=fe7a018a5554c9b78634e53a133e7aa1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4569820786&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4569820786" width="1" height="1" border="0" alt="" style="width:170px !important; border:none !important; margin:0px !important;" />
                   <div class="card-body">
                       <h4 class="card-title">まいにち、修造! </h4>
-                      <p class="card-text">元気が出ない? 本気になれない? それなら僕に、あなたの毎日を応援させてください!!と修造さんがおっしゃっています！！</p>
+                      <p class="card-text">元気が出ない? 本気になれない? それなら僕にあなたの毎日を応援させてください!と修造さんがおっしゃっています！</p>
                   </div>
               </div>
             </div>
@@ -214,7 +214,7 @@
                 <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4163908013/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4163908013&linkCode=as2&tag=yh72yh72-22&linkId=cd94aa65c4bca48c45b94febe1929435"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4163908013&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4163908013" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
                   <div class="card-body">  
                       <h4 class="card-title">Date of DATE</h4>
-                      <p class="card-text">伊達さんのセカンドキャリアを綴った本です。日本テニス界のレジェンドですね。やりきる姿勢をお手本にしたいです。</p>
+                      <p class="card-text">伊達さんのセカンドキャリアを綴った本です。伊達さんの高いプロ意識や、やりきる姿勢をお手本にしたいです。</p>
                   </div>
               </div>
             </div>
