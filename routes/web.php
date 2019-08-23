@@ -33,7 +33,7 @@ Route::get('post/{id}','PostController@detail');
 Route::get('/auth/login/{social}', 'Auth\SocialLiteController@login');
 Route::get('/auth/callback/{social}', 'Auth\SocialLiteController@callback');
 
-
+// コメント投稿
 Route::post('comment/create','CommentController@create');
 
 

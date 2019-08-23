@@ -106,7 +106,7 @@
     <style>
       .pagination { justify-content: center; }
     </style>
-    {{ $posts->links() }}
+    {{ $posts->appends(Request::only('keyword'))->links() }}
   </div>
 </div>
 
@@ -123,11 +123,11 @@
 <form action="/post/create" method="post">
     @csrf
     <div class="form-group">
-        <label for="title">タイトル</label>
+        <label for="title">＜新規投稿＞　タイトル</label>
         <input class="form-control" type="text" id="title" name="title">
     </div>
     <div class="form-group">
-        <label for="content">内容</label>
+        <label for="content">＜新規投稿＞　内容</label>
         <textarea class="form-control" id="content" name="content" rows="3"></textarea>
     </div>
     <button class="btn btn-primary btn-block" type="submit">スレッドを立てる</button>

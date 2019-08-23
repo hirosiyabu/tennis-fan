@@ -16,11 +16,14 @@ class PostController extends Controller
     function index(Request $request){
         if($request->filled('keyword')){
             $keyword = $request->input('keyword');
-            $posts = Post::where('title','like','%'.$keyword.'%')->get();
+            $posts = Post::where('title','like','%'.$keyword.'%');
+            $posts = $posts->orderBy('created_at','desc')->paginate(5);
+            return view('post/index',['posts' => $posts,'keyword',$keyword]);
         }else{
             $posts = \App\Post::orderBy('created_at', 'desc')->paginate(5);
-        }
             return view('post/index',['posts' => $posts]);
+        }
+            
     }
 
     function create(Request $request){
