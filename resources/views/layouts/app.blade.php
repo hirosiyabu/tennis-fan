@@ -17,8 +17,9 @@
     if( x < text.length ){setTimeout("y()", 100);}}
     //-->
     </SCRIPT>
-    <!-- snsログインアイコン用 -->
-    
+    <!-- ローディングアニメーション -->
+    <script src="{{ asset('/js/loading.js') }}"></script>
+    <link href="{{ asset('/css/loading.css') }}" rel="stylesheet" />
     <!-- facebookシェア用コード -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
     <!-- ボタンスクロール  -->
