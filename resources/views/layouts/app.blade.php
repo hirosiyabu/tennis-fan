@@ -20,6 +20,16 @@
     <!-- ローディングアニメーション -->
     <script src="{{ asset('/js/loading.js') }}"></script>
     <link href="{{ asset('/css/loading.css') }}" rel="stylesheet" />
+    <!-- 効果音 -->
+    <audio id="CatSound" preload="auto">
+        <source src="{{ asset('/catvoice.mp3') }}" type="audio/mp3">
+        <p>※お使いのブラウザでは音は鳴りません。</p>
+    </audio>
+    <script type="text/javascript">
+        function sound() {
+        document.getElementById("CatSound").play();
+        }
+    </script>
     <!-- facebookシェア用コード -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
     <!-- ボタンスクロール  -->

@@ -21,8 +21,8 @@
             </FORM> 
         </div>
         </div>
-        <div class="col-lg-4 ">
-            <img class="d-block mx-auto" src="{{asset('img/tennis_animal_neko.png')}}"   width="200" height="200" ait="テニス">
+        <div class="col-lg-4 btn">
+            <img class="d-block mx-auto" src="{{asset('img/tennis_animal_neko.png')}}" onclick="sound();" width="200" height="200" ait="テニス">
         </div>
     </div>
 </div>
