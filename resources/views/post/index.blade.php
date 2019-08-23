@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto mb-20">
-            <h1 class="mb-5 display-4">Welcome to the Tennis Fan Site!</h1>
+            <h1 class="mb-5 display-4 text-light font-weight-bold">Welcome to the Tennis Fan Site!</h1>
           </div>
         </div>
       </div>

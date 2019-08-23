@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') }}</title>
+    <title>テニスファンサイト</title>
     <!-- 一文字アニメーション -->
     <SCRIPT language="JavaScript">
     <!--
@@ -91,10 +91,10 @@
 </head>
 <body onLoad="y()">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm pr-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm px-0">
             <div class="container pr-0">
                 <a class="navbar-brand mr-4" href="{{ url('/post') }}">
-                    {{ config('app.name') }}
+                    <img src="/img/タイトルロゴ.png" width="200" height="50" alt="テニスファンサイト">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
