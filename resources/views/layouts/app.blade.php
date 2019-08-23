@@ -94,7 +94,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm px-0">
             <div class="container pr-0">
                 <a class="navbar-brand mr-4" href="{{ url('/post') }}">
-                    <img src="{{asset('/img/タイトルロゴ.png')}}" width="200" height="50" alt="テニスファンサイト">
+                    <img src="{{asset('/img/title.logo.png')}}"  width="200" height="50" alt="テニスファンサイト">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
