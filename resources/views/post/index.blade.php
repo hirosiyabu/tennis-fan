@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="top" class="card bg-dark text-dark text-center">
-  <img class="card-img" src="{{asset('img/tennis3.jpg')}}" width="744" height="450" alt="Card image">
+  <img class="card-img" src="{{asset('img/tennis3.jpg')}}" width="744" height="450" alt="テニスファンサイト">
     <div class="card-img-overlay">
       <div class="container">
         <div class="row">
@@ -92,7 +92,7 @@
   <div class="card">
       <div class="card-header">
       <h4 class="font-weight-bold">タイトル：{{ $post->title }}</h4>
-      <p><img src="img/backimg.jpg" alt=titleimg  width="100%" height="45"></p>
+      <p><img src="img/backimg.jpg" alt="テニス掲示板"  width="100%" height="45"></p>
       </div>
       <div class="card-title">
           <p class="card-text">{{ $post->content }}</p>
@@ -140,7 +140,7 @@
           <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="d-flex">
               <div class="card">
-                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4163902511/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4163902511&linkCode=as2&tag=yh72yh72-22&linkId=172221919ebbb3ac6813389e5ac09f83"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4163902511&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4163902511" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />  
+                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4163902511/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4163902511&linkCode=as2&tag=yh72yh72-22&linkId=172221919ebbb3ac6813389e5ac09f83"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4163902511&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4163902511" width="1" height="1" border="0" alt="錦織圭" style="border:none !important; margin:0px !important;" />  
                   <div class="card-body">
                       <h4 class="card-title">頂点への道</h4>
                       <p class="card-text">2014年大活躍した年の本です。怪我をして長期離脱してたり、活躍の前にはかなり我慢の時期がありましたね。</p>
@@ -153,7 +153,7 @@
           <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="d-flex">
               <div class="card">
-                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4864106975/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4864106975&linkCode=as2&tag=yh72yh72-22&linkId=751ca18812480af95158760e211f103b"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4864106975&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4864106975" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4864106975/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4864106975&linkCode=as2&tag=yh72yh72-22&linkId=751ca18812480af95158760e211f103b"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4864106975&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4864106975" width="1" height="1" border="0" alt="大坂なおみ" style="border:none !important; margin:0px !important;" />
                   <div class="card-body">
                       <h4 class="card-title">心を強くする</h4>
                       <p class="card-text">大坂なおみ選手の前コーチ、バインさんが書いた本です。大坂さんへのコーチングが一時話題になりましたね。</p>
@@ -167,7 +167,7 @@
             <div class="d-flex">
               <div class="card">
                 <div class="card-body">
-                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4800276284/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4800276284&linkCode=as2&tag=yh72yh72-22&linkId=e1d737c326840843ec6a3751d0b28a50"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4800276284&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4800276284" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4800276284/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4800276284&linkCode=as2&tag=yh72yh72-22&linkId=e1d737c326840843ec6a3751d0b28a50"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4800276284&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4800276284" width="1" height="1" border="0" alt="マイケルチャン" style="border:none !important; margin:0px !important;" />
                       <h4 class="card-title">超一流のメンタル</h4>
                       <p class="card-text">マイケル・チャンさんのテニスレッスン本DVD付きです。基本を大事にするチャンコーチの指導を疑似体験できるかも。</p>
                   </div>
@@ -185,7 +185,7 @@
           <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="d-flex">
               <div class="card">
-                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4569820786/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4569820786&linkCode=as2&tag=yh72yh72-22&linkId=fe7a018a5554c9b78634e53a133e7aa1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4569820786&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4569820786" width="1" height="1" border="0" alt="" style="width:170px !important; border:none !important; margin:0px !important;" />
+                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4569820786/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4569820786&linkCode=as2&tag=yh72yh72-22&linkId=fe7a018a5554c9b78634e53a133e7aa1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4569820786&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4569820786" width="1" height="1" border="0" alt="松岡修造" style="width:170px !important; border:none !important; margin:0px !important;" />
                   <div class="card-body">
                       <h4 class="card-title">まいにち、修造! </h4>
                       <p class="card-text">元気が出ない? 本気になれない? それなら僕にあなたの毎日を応援させてください!と修造さんがおっしゃっています！</p>
@@ -198,7 +198,7 @@
           <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="d-flex">
               <div class="card">
-                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4862560903/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4862560903&linkCode=as2&tag=yh72yh72-22&linkId=9c5ea7bd82a55bb1f22a05c92a387893"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4862560903&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4862560903" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4862560903/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4862560903&linkCode=as2&tag=yh72yh72-22&linkId=9c5ea7bd82a55bb1f22a05c92a387893"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4862560903&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4862560903" width="1" height="1" border="0" alt="杉山愛" style="border:none !important; margin:0px !important;" />
                   <div class="card-body">
                       <h4 class="card-title">勝負をこえた生き方</h4>
                       <p class="card-text">杉山さんのコラムをまとめた本です。引退後もメディアで大活躍ですね！笑顔が素敵でご家族も仲良くて素敵です。</p>
@@ -211,7 +211,7 @@
           <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="d-flex">
               <div class="card">
-                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4163908013/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4163908013&linkCode=as2&tag=yh72yh72-22&linkId=cd94aa65c4bca48c45b94febe1929435"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4163908013&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4163908013" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                <a target="_blank"  href="https://www.amazon.co.jp/gp/product/4163908013/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4163908013&linkCode=as2&tag=yh72yh72-22&linkId=cd94aa65c4bca48c45b94febe1929435"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=4163908013&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=yh72yh72-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=yh72yh72-22&l=am2&o=9&a=4163908013" width="1" height="1" border="0" alt="伊達公子" style="border:none !important; margin:0px !important;" />
                   <div class="card-body">  
                       <h4 class="card-title">伊達公子の日</h4>
                       <p class="card-text">伊達さんのセカンドキャリアを綴った本です。伊達さんの高いプロ意識や、やりきる姿勢をお手本にしたいです。</p>
