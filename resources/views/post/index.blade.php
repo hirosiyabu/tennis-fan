@@ -309,14 +309,14 @@
               </div>
           </div>        
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb-5">
           <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
             <div class="d-flex">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/50gp8mTIOfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
                 </div>
             </div>
-              <div class="card">
+              <div class="card mb-5">
                 <div class="card-body">
                 テニス選手史上最強の選手と言われるフェデラー選手の動画、こんなショットが打てるのかと驚かされます。テニスを普段あまり見ない方にもお勧めできる動画です！
                 </div>
