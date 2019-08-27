@@ -21,10 +21,20 @@
     <script src="{{ asset('/js/loading.js') }}"></script>
     <link href="{{ asset('/css/loading.css') }}" rel="stylesheet" />
     <!-- 効果音 -->
+    <audio id="TennisSound" preload="auto">
+        <source src="{{ asset('/tennissound.mp3') }}" type="audio/mp3">
+        <p>※お使いのブラウザでは音は鳴りません。</p>
+    </audio>
     <audio id="CatSound" preload="auto">
         <source src="{{ asset('/catvoice.mp3') }}" type="audio/mp3">
         <p>※お使いのブラウザでは音は鳴りません。</p>
     </audio>
+    
+    <script type="text/javascript">
+        function smash() {
+        document.getElementById("TennisSound").play();
+        }
+    </script>
     <script type="text/javascript">
         function sound() {
         document.getElementById("CatSound").play();

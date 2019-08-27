@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="top" class="card bg-dark text-dark text-center">
-  <img class="card-img" src="{{asset('img/tennis3.jpg')}}" width="744" height="450" alt="テニスファンサイト">
+  <img class="card-img btn" src="{{asset('img/tennis3.jpg')}}" onclick="smash();" width="744" height="450" alt="テニスファンサイト">
     <div class="card-img-overlay">
       <div class="container">
         <div class="row">
