@@ -7,8 +7,8 @@
     <div class="card-header">
       <p class="font-weight-bold">タイトル：{{ $post->title }}</p>
     </div>
-    <div class="card-title">
-      <p class="card-text">{{ $post->content }}</p>
+    <div class="card-title mb-5">
+      <p class="card-text mb-5">{{ $post->content }}</p>
       <small>投稿日：{{ date("Y年 m月 d日　H:i",strtotime($post->created_at)) }}</small>
     </div>
   </div>
@@ -41,7 +41,7 @@
 @foreach($errors->all() as $message)
 	<p class="bg-danger">{{ $message }}</p>
 @endforeach
-  <div>
+  <div class="mb-5">
   <h3>コメント一覧</h3><p>コメント数：({{ $post->comments()->count()}})</p>
 @include('comment')
 @foreach($post->comments as $one_comment)

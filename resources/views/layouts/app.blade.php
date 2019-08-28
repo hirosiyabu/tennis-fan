@@ -171,10 +171,10 @@
         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-info mt-3">
             <div class="container">
                     <a id="itop" href="#top" class="navbar-brand">topへ</a>
-                    <p class="navbar-nav">© Mytennis-fansite 2019. All Rights Reserved.</p>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <p class="navbar-nav">© Mytennis-fansite 2019. All Rights Reserved.</p>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
