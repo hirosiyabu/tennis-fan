@@ -48,10 +48,10 @@
   <div class="card">
     <div class="card-header">
       <p class="font-weight-bold">コメンター：　{{ $one_comment->commenter }}</p>
+      <small>投稿日：{{ date("Y年 m月 d日　H:i",strtotime($one_comment->created_at)) }}</small>
     </div>
     <div class="card-title">
       <p class="card-text">{{ $one_comment->comment }}</p>
-      <small>投稿日：{{ date("Y年 m月 d日　H:i",strtotime($one_comment->created_at)) }}</small>
     </div>
   </div>
 @endforeach   
