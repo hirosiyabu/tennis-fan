@@ -120,7 +120,7 @@
 @foreach($errors->all() as $message)
 	<p class="bg-danger">{{ $message }}</p>
 @endforeach
-<form action="/post/create" method="post">
+<form action="/post/create" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label for="title">＜新規投稿＞　タイトル</label>
@@ -129,6 +129,15 @@
     <div class="form-group">
         <label for="content">＜新規投稿＞　内容</label>
         <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+    <!-- アップロードした画像。なければ表示しない -->
+    @isset ($filename)
+    <div>
+        <img src="{{ asset('storage/' . $filename) }}">
+    </div>
+    @endisset
+
+    <label for="photo">画像ファイル(無くてもOK！):</label>
+    <input type="file" class="form-control" name="image">
     </div>
     <button class="btn btn-primary btn-block" type="submit">スレッドを立てる</button>
 </form>

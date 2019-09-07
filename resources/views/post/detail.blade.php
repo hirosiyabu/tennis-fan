@@ -8,7 +8,13 @@
       <p class="font-weight-bold">タイトル：{{ $post->title }}</p>
     </div>
     <div class="card-title mb-5">
+    @isset ($post->image)
+    <div cclass>
+        <img src="{{ asset( $post->image) }}" class="img-fluid">
+    </div>
+    @endisset
       <p class="card-text mb-5">{{ $post->content }}</p>
+      
       <small>投稿日：{{ date("Y年 m月 d日　H:i",strtotime($post->created_at)) }}</small>
     </div>
   </div>

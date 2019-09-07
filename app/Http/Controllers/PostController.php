@@ -30,21 +30,33 @@ class PostController extends Controller
         $rules = [
             'title' => 'required',
             'content'=>'required',
+            'image'=>[
+                // アップロードされたファイルであること
+                'file',
+                // 画像ファイルであること
+                'image',
+                // MIMEタイプを指定
+                'mimes:jpeg,png,jpg,bmp,gif,svg',
+            ]
         ];
     
         $messages = array(
             'title.required' => 'タイトルを正しく入力してください。',
             'content.required' => '本文を正しく入力してください。',
+            "image" => "指定されたファイルが画像(jpg、png、bmp、gif、svg)ではありません。",
         );
     
         $validator = Validator::make($request->all(),$rules,$messages);
         if ($validator->passes()){
-        $create_post = Post::create([
-            'user_id' => Auth::id(),
-            'title' => $request->title,
-            'content' => $request->content
-        ]);
-        return redirect("/post/$create_post->id")
+            $post = new Post;
+            $post->user_id = Auth::id();
+            $post->title = $request->title;
+            $post->content = $request->content;
+            $img_name = uniqid("IMG_") . "." . $request->file('image')->guessExtension(); // IMGファイル名
+            $request->file('image')->move(public_path() . "/img/tmp", $img_name);
+            $post->image = "/img/tmp/".$img_name;
+            $post->save();
+            return redirect("/post/$post->id")
         ->with('message', '投稿がが完了しました。');
         }else{
         return redirect("/post")
