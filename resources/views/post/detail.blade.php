@@ -10,7 +10,7 @@
     <div class="card-title mb-5">
     @if (!empty($post->image))                          
     <div>     
-      <img src="data:image/png;base64,<?= $post->image ?>" class="h-auto d-block mx-auto" style="width:150px;"> 
+      <img src="data:image/png;base64,<?= $post->image ?>" class="h-auto d-block mx-auto" style="width:330px;"> 
     </div>
     @endif
       <p class="card-text mb-5">{{ $post->content }}</p>
