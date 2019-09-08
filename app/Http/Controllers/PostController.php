@@ -52,7 +52,7 @@ class PostController extends Controller
             $post->user_id = Auth::id();
             $post->title = $request->title;
             $post->content = $request->content;
-            if (!empty($post->image)){
+            if (!empty($request->image)){
             $post->image = base64_encode(file_get_contents($request->image->getRealPath()));
             }
             $post->save();
