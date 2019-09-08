@@ -94,6 +94,11 @@
       <h4 class="font-weight-bold">タイトル：{{ $post->title }}</h4>
       <p><img src="img/backimg.jpg" alt="テニス掲示板"  width="100%" height="45"></p>
       </div>
+      @if (!empty($post->image))                          
+        <div>     
+          <img src="data:image/png;base64,<?= $post->image ?>" class="h-auto d-block mx-auto" style="width:200px;"> 
+        </div>
+      @endif
       <div class="card-title">
           <p class="card-text">{{ $post->content }}</p>
           <p class="card-text">コメント数：{{ $post->comments()->count()}}</p><small>投稿日：{{ date("Y年 m月 d日 H:i",strtotime($post->created_at)) }}</small> <small>最新コメント投稿日時：{{ date("Y年 m月 d日 H:i",strtotime($post->created_at)) }}</small>
@@ -129,12 +134,6 @@
     <div class="form-group">
         <label for="content">＜新規投稿＞　内容</label>
         <textarea class="form-control" id="content" name="content" rows="3"></textarea>
-    <!-- アップロードした画像。なければ表示しない -->
-    @isset ($filename)
-    <div>
-        <img src="{{ asset('storage/' . $filename) }}">
-    </div>
-    @endisset
 
     <label for="photo">画像ファイル(無くてもOK！):</label>
     <input type="file" class="form-control" name="image">
