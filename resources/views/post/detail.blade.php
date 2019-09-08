@@ -8,11 +8,11 @@
       <p class="font-weight-bold">タイトル：{{ $post->title }}</p>
     </div>
     <div class="card-title mb-5">
-    @isset ($post->image)
-    <div cclass>
-        <img src="{{ asset( $post->image) }}" class="img-fluid">
+    @if (!empty($post->image))                          
+    <div>     
+      <img src="data:image/png;base64,<?= $post->image ?>" class="h-auto d-block mx-auto" style="width:150px;"> 
     </div>
-    @endisset
+    @endif
       <p class="card-text mb-5">{{ $post->content }}</p>
       
       <small>投稿日：{{ date("Y年 m月 d日　H:i",strtotime($post->created_at)) }}</small>

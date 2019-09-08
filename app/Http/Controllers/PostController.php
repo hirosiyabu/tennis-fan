@@ -52,9 +52,7 @@ class PostController extends Controller
             $post->user_id = Auth::id();
             $post->title = $request->title;
             $post->content = $request->content;
-            $img_name = uniqid("IMG_") . "." . $request->file('image')->guessExtension(); // IMGファイル名
-            $request->file('image')->move(public_path() . "/img/tmp", $img_name);
-            $post->image = "/img/tmp/".$img_name;
+            $post->image = base64_encode(file_get_contents($request->image->getRealPath()));
             $post->save();
             return redirect("/post/$post->id")
         ->with('message', '投稿がが完了しました。');
