@@ -15,7 +15,7 @@ class AddGoogle2faColumnToUsers extends Migration
    {
        Schema::table('users', function (Blueprint $table) {
            //下の行を追加
-           $table->text('google2fa_secret');
+           $table->text('google2fa_secret')->nullable()->after('password');
        });
    }
 
