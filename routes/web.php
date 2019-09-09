@@ -44,5 +44,8 @@ Route::get('/book','BookController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
+//2段階認証
+Route::get('/complete-registration', 'Auth\RegisterController@completeRegistration');
+Route::post('/2fa', function () {
+    return redirect(URL()->previous());
+})->name('2fa')->middleware('2fa');

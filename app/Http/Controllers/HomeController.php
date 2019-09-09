@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+use Google2FA;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,9 +15,9 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware(['auth', '2fa']);
     }
-
+    
     /**
      * Show the application dashboard.
      *
