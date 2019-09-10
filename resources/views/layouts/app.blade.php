@@ -131,12 +131,12 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a> -->
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('新規登録') }}</a>
+                                <!-- <li class="nav-item"> -->
+                                    <!-- <a class="nav-link" href="{{ route('register') }}">{{ __('新規登録') }}</a> -->
                                 </li>
                             @endif
                             <li class="nav-item">    
@@ -178,10 +178,10 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Privacy Policy</a>
+                                <!-- <a class="nav-link" href="#">Privacy Policy</a> -->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cotact</a>
+                                <a class="nav-link" href="https://twitter.com/hirosiweb1">Cotact</a>
                             </li>
                             <li class="nav-item">
                             <div class="fb-share-button" data-href="https://tennis-fan.herokuapp.com/post" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftennis-fan.herokuapp.com%2Fpost&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">シェア</a></div>

@@ -11,7 +11,7 @@ class PostController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'detail']);
+        $this->middleware(['auth', '2fa'])->except(['index', 'detail']);
     }
     function index(Request $request){
         if($request->filled('keyword')){
