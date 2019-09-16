@@ -17,11 +17,17 @@ class RedirectIfAuthenticated
      */
 
     
-        public function boot()
-        {
-          if ($this->app->environment() == 'production') {
-               URL::forceScheme('https');
-           }
+    public function boot()
+    {
+        // herokuマイグレーション用
+        Schema::defaultStringLength(191);
+
+        // 本番環境(Heroku)でhttpsを強制する
+        if (\App::environment('production')) {
+            \URL::forceScheme('https');
         }
+    }
+        
     
 }
+
