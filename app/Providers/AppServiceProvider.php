@@ -27,9 +27,9 @@ class AppServiceProvider extends ServiceProvider
         // herokuマイグレーション用
         Schema::defaultStringLength(191);
 
-        // 本番環境(Heroku)でhttpを強制する
+        // 本番環境(Heroku)でhttpsを強制する
         if (\App::environment('heroku')) {
-            \URL::forceScheme('http');
+            \URL::forceScheme('https');
         }
     }
 }
